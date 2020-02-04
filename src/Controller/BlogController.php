@@ -7,6 +7,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Class BlogController
+ * @Route("/api", name="api_")
+ */
 class BlogController extends AbstractController
 {
     /**
