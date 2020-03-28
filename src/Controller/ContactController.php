@@ -27,7 +27,6 @@ class ContactController extends AbstractController
             ->setTo($_ENV['MAILER_TO'])
             ->setBody(
                 $this->renderView(
-                // templates/emails/registration.html.twig
                     'emails/contact.html.twig',
                     $data
                 ),
@@ -35,7 +34,6 @@ class ContactController extends AbstractController
             )
             ->addPart(
                 $this->renderView(
-                // templates/emails/registration.txt.twig
                     'emails/contact.txt.twig',
                     $data
                 ),
