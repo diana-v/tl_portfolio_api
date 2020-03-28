@@ -1,3 +1,7 @@
 index:
     path: /
     controller: App\Controller\HomeController::index
+
+contact_form_submit:
+    path: /api/submit_form/contact
+    controller: App\Controller\ContactController::submit
